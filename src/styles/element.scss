@@ -1,0 +1,12 @@
+/* 自定义主题变量 */
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      'base': #409eff,
+      // Element Plus 默认蓝色
+    )
+  )
+);
+
+/* 导入所有样式 */
+@use 'element-plus/theme-chalk/src/index.scss' as *;
