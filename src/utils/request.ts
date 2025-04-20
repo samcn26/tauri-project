@@ -1,4 +1,4 @@
-import axios, { AxiosRequestConfig } from 'axios'
+import axios from 'axios'
 import { CurlParsed, curlToAxiosConfig } from './curlParser'
 
 // export async function executeCurl(parsed: CurlParsed) {
