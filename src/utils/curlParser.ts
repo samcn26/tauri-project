@@ -33,6 +33,7 @@ export function curlToAxiosConfig(curlStr: string): CurlParsed {
         const [rawKey, ...rawValue] = cleanedArgs[++i].split(':')
         headers[rawKey.trim()] = rawValue.join(':').trim()
         break
+      case '--data-binary':
       case '--data-raw':
       case '-d':
         hasData = true
